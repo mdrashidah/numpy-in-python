@@ -136,4 +136,21 @@ Output:
 [[19 22]
  [43 50]] 
 Conclusion
-In this guide, we covered the basics of Numpy arrays in Python. We learned how to create and manipulate arrays, and how to perform operations on them. Numpy arrays are a powerful tool for numerical computing, and can be used in a wide range of applications. With this knowledge, you’ll be well on your way to mastering Numpy arrays in Python.
+In this guide, we covered the basics of Numpy arrays in Python. We learned how to create and manipulate arrays, and how to perform operations on them. Numpy arrays are a powerful tool for numerical computing and can be used in a wide range of applications. With this knowledge, you’ll be well on your way to mastering Numpy arrays in Python.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+The tools that I have used in this are:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. VS CODE: https://code.visualstudio.com/
+2. NUMPY OFFICIAL WEBSITE: https://numpy.org
+3. CHATGPT FOR CLEARING CONFUSION AND UNDERSTANDING BETTER: https://chatgpt.com/
+4. YOUTUBE VIDEO and tutorials which I USED AS A RESOURCE TO STUDY(BEGINNER): https://youtu.be/VXU4LSAQDSc?si=JugheyKhfR17_R0E, https://youtu.be/Rbh1rieb3zc?si=ZMVLbx8tPGHmxWu7
+5. Website that I use to practice questions:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Testing to test numpy:
+
+NumPy requires pytest and hypothesis. Tests can then be run after installation with:
+
+python -c "import numpy, sys; sys.exit(numpy.test() is False)"
