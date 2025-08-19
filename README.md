@@ -4,7 +4,21 @@
 
 Website: https://numpy.org
 
+some exciting memes related to this 😁😂😂🤣:
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<img width="640" height="412" alt="image" src="https://github.com/user-attachments/assets/34c7db47-d2ad-43cb-acdf-f9b2efeb259c" />
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<img width="1080" height="1187" alt="image" src="https://github.com/user-attachments/assets/c260c088-0b30-4317-b1e8-843a00fc0511" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="442" height="720" alt="image" src="https://github.com/user-attachments/assets/02647bab-f0e7-4175-b134-0e8ae51339a7" />
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # numpy-in-python
 NumPy is a Python library used for working with arrays. It also has functions for working in the domains of linear algebra, the Fourier transform, and matrices. NumPy was created in 2005 by Travis Oliphant. It is an open-source project, and you can use it freely. NumPy stands for Numerical Python.
  Numpy is a popular library for numerical computing in Python. One of its most powerful features is its ability to work with arrays. In this guide, we’ll cover everything you need to know about Numpy arrays in Python, including how to create them, manipulate them, and perform operations on them.
