@@ -1,3 +1,10 @@
+<img width="1196" height="527" alt="image" src="https://github.com/user-attachments/assets/1691c891-6d3d-4185-8af5-b8d4f7b4f73f" />
+
+
+
+
+
+
 # numpy-in-python
 NumPy is a Python library used for working with arrays. It also has functions for working in the domains of linear algebra, the Fourier transform, and matrices. NumPy was created in 2005 by Travis Oliphant. It is an open-source project, and you can use it freely. NumPy stands for Numerical Python.
  Numpy is a popular library for numerical computing in Python. One of its most powerful features is its ability to work with arrays. In this guide, we’ll cover everything you need to know about Numpy arrays in Python, including how to create them, manipulate them, and perform operations on them.
