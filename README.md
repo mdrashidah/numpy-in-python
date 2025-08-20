@@ -146,7 +146,7 @@ In this guide, we covered the basics of Numpy arrays in Python. We learned how t
 
 The tools that I have used in this are:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1. VS CODE: https://code.visualstudio.com/
+1. TOOLS THAT I HAVE USED to learn and to practice the code: https://code.visualstudio.com/, https://jupyter.org/try-jupyter/notebooks/?path=notebooks/Intro.ipynb, https://numpy.org/install/
 2. NUMPY OFFICIAL WEBSITE: https://numpy.org
 3. CHATGPT FOR CLEARING CONFUSION AND UNDERSTANDING BETTER: https://chatgpt.com/
 4. YOUTUBE VIDEO and tutorials which I USED AS A RESOURCE TO STUDY(BEGINNER): https://youtu.be/VXU4LSAQDSc?si=JugheyKhfR17_R0E, https://youtu.be/Rbh1rieb3zc?si=ZMVLbx8tPGHmxWu7
