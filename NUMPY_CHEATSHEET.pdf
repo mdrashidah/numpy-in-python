@@ -1,0 +1,444 @@
+%PDF-1.4
+%
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 1498 >>
+stream
+BT
+/F1 11 Tf
+1 0 0 1 54 738 Tm
+14 TL
+(NumPy Revision Cheatsheet) Tj
+T*
+() Tj
+T*
+(1\) Import + Array Creation) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import numpy as np) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(From list: a = np.array\([1, 2, 3]\)) Tj
+T*
+(2D array: A = np.array\([[1, 2], [3, 4]]\)) Tj
+T*
+(Zeros / Ones / Constant:) Tj
+T*
+(  - np.zeros\(\(m, n\)\)) Tj
+T*
+(  - np.ones\(\(m, n\)\)) Tj
+T*
+(  - np.full\(\(m, n\), k\)) Tj
+T*
+(Range:) Tj
+T*
+(  - np.arange\(start, stop, step\)) Tj
+T*
+(  - np.linspace\(start, stop, num\)) Tj
+T*
+(Identity matrix: np.eye\(n\)) Tj
+T*
+(Random:) Tj
+T*
+(  - np.random.rand\(m, n\) \(uniform [0,1\)\)) Tj
+T*
+(  - np.random.randn\(m, n\) \(normal distribution\)) Tj
+T*
+(  - np.random.randint\(low, high, size=\(m, n\)\)) Tj
+T*
+() Tj
+T*
+(Quick reminder: Prefer NumPy arrays over Python lists for numeric operations \(faster +) Tj
+T*
+(vectorized\).) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(2\) Shape, Dimension, and Data Type) Tj
+T*
+() Tj
+T*
+(a.shape ? tuple of dimensions) Tj
+T*
+(a.ndim ? number of dimensions) Tj
+T*
+(a.size ? total number of elements) Tj
+T*
+(a.dtype ? element type) Tj
+T*
+(Convert type: a.astype\(np.float64\)) Tj
+T*
+(Reshape: a.reshape\(r, c\)) Tj
+T*
+(Flatten: a.ravel\(\) or a.flatten\(\)) Tj
+T*
+(Transpose: A.T or A.transpose\(\)) Tj
+T*
+() Tj
+T*
+(Formula:) Tj
+T*
+(total_elements = d1  d2  ...  dk) Tj
+T*
+() Tj
+T*
+(Quick reminder: reshape needs same total elements before/after.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(3\) Indexing, Slicing, Boolean Masking) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 1450 >>
+stream
+BT
+/F1 11 Tf
+1 0 0 1 54 738 Tm
+14 TL
+(Index: a[i], A[i, j]) Tj
+T*
+(Slice: a[start:stop:step]) Tj
+T*
+(Row/column:) Tj
+T*
+(  - A[i, :] \(row i\)) Tj
+T*
+(  - A[:, j] \(column j\)) Tj
+T*
+(Boolean filter: a[a > 0]) Tj
+T*
+(Conditional replacement: a[a < 0] = 0) Tj
+T*
+() Tj
+T*
+(Quick reminder: Slices are usually *views* \(not copies\). Use .copy\(\) when needed.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(4\) Core Vectorized Operations) Tj
+T*
+() Tj
+T*
+(For arrays of same shape:) Tj
+T*
+(Addition: C = A + B) Tj
+T*
+(Subtraction: C = A - B) Tj
+T*
+(Elementwise multiply: C = A * B) Tj
+T*
+(Elementwise divide: C = A / B) Tj
+T*
+(Power: A  p) Tj
+T*
+() Tj
+T*
+(With scalar k:) Tj
+T*
+(A + k, A - k, A * k, A / k) Tj
+T*
+() Tj
+T*
+(Formulae:) Tj
+T*
+(Elementwise addition: C[i,j] = A[i,j] + B[i,j]) Tj
+T*
+(Elementwise multiply: C[i,j] = A[i,j]  B[i,j]) Tj
+T*
+() Tj
+T*
+(Quick reminder: * is elementwise multiplication, not matrix multiplication.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(5\) Broadcasting \(Very Important\)) Tj
+T*
+() Tj
+T*
+(Two shapes are compatible if each trailing dimension is equal or one of them is 1.) Tj
+T*
+() Tj
+T*
+(Examples:) Tj
+T*
+(\(m, n\) + \(1, n\) ?) Tj
+T*
+(\(m, n\) + \(m, 1\) ?) Tj
+T*
+(\(m, n\) + \(n,\) ?) Tj
+T*
+() Tj
+T*
+(Formula idea:) Tj
+T*
+(If needed, dimension 1 is conceptually repeated to match other shape.) Tj
+T*
+() Tj
+T*
+(Quick reminder: Read shapes from right to left when checking broadcasting.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 1625 >>
+stream
+BT
+/F1 11 Tf
+1 0 0 1 54 738 Tm
+14 TL
+(6\) Aggregations and Statistics) Tj
+T*
+() Tj
+T*
+(Sum: np.sum\(a\) / a.sum\(\)) Tj
+T*
+(Mean: np.mean\(a\)) Tj
+T*
+(Median: np.median\(a\)) Tj
+T*
+(Standard deviation: np.std\(a\)) Tj
+T*
+(Variance: np.var\(a\)) Tj
+T*
+(Min/Max: np.min\(a\), np.max\(a\)) Tj
+T*
+(Argmin/Argmax: np.argmin\(a\), np.argmax\(a\)) Tj
+T*
+() Tj
+T*
+(Axis usage:) Tj
+T*
+(axis=0 ? column-wise \(down rows\)) Tj
+T*
+(axis=1 ? row-wise \(across columns\)) Tj
+T*
+() Tj
+T*
+(Formulae:) Tj
+T*
+(Mean: ? = \(1/n\) ? xi) Tj
+T*
+(Variance \(population\): ? = \(1/n\) ? \(xi - ?\)) Tj
+T*
+(Std dev: ? = ??) Tj
+T*
+() Tj
+T*
+(Quick reminder: Always confirm axis to avoid wrong output shape.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(7\) Linear Algebra Essentials) Tj
+T*
+() Tj
+T*
+(Matrix multiplication: A @ B or np.matmul\(A, B\)) Tj
+T*
+(Dot product: np.dot\(a, b\)) Tj
+T*
+(Determinant: np.linalg.det\(A\)) Tj
+T*
+(Inverse: np.linalg.inv\(A\)) Tj
+T*
+(Eigenvalues/eigenvectors: np.linalg.eig\(A\)) Tj
+T*
+(Solve Ax=b: x = np.linalg.solve\(A, b\)) Tj
+T*
+() Tj
+T*
+(Formulae:) Tj
+T*
+(Dot product: ab = ? ai bi) Tj
+T*
+(Matrix product: C[i,j] = ? A[i,k]B[k,j]) Tj
+T*
+() Tj
+T*
+(Quick reminder: For solving equations, prefer solve over explicit inverse for stability.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(8\) Stacking, Splitting, and Joining) Tj
+T*
+() Tj
+T*
+(Vertical stack: np.vstack\([A, B]\)) Tj
+T*
+(Horizontal stack: np.hstack\([A, B]\)) Tj
+T*
+(Concatenate: np.concatenate\([A, B], axis=0 or 1\)) Tj
+T*
+(Split: np.split\(a, indices_or_sections\)) Tj
+T*
+() Tj
+T*
+(Quick reminder: Ensure dimensions match except along concatenation axis.) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 1111 >>
+stream
+BT
+/F1 11 Tf
+1 0 0 1 54 738 Tm
+14 TL
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(9\) Useful Functions for Revision) Tj
+T*
+() Tj
+T*
+(Unique values: np.unique\(a\)) Tj
+T*
+(Sort: np.sort\(a\)) Tj
+T*
+(Clip: np.clip\(a, low, high\)) Tj
+T*
+(Where condition: np.where\(cond, x, y\)) Tj
+T*
+(Any/All:) Tj
+T*
+(  - np.any\(cond\)) Tj
+T*
+(  - np.all\(cond\)) Tj
+T*
+() Tj
+T*
+(Quick reminder: np.where is excellent for vectorized if-else logic.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(10\) Exam-Time Mini Checklist) Tj
+T*
+() Tj
+T*
+(1. Check shape first: print\(A.shape\)) Tj
+T*
+(2. Decide operation type:) Tj
+T*
+(   - elementwise \(+, -, *, /\)) Tj
+T*
+(   - matrix \(@\)) Tj
+T*
+(3. Verify broadcasting compatibility) Tj
+T*
+(4. Confirm axis in reductions) Tj
+T*
+(5. Watch integer vs float dtype) Tj
+T*
+(6. Use .copy\(\) if modifying slices) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(11\) 30-Second Formula Recap) Tj
+T*
+() Tj
+T*
+(? = \(1/n\) ? xi) Tj
+T*
+(? = \(1/n\) ? \(xi - ?\)) Tj
+T*
+(? = ??) Tj
+T*
+(ab = ? ai bi) Tj
+T*
+(C[i,j] = ? A[i,k]B[k,j]) Tj
+T*
+() Tj
+T*
+(Quick reminder note: In NumPy, *think in arrays and shapes*, not loops.) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 10 0 R >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000140 00000 n 
+0000000210 00000 n 
+0000001760 00000 n 
+0000001886 00000 n 
+0000003388 00000 n 
+0000003514 00000 n 
+0000005191 00000 n 
+0000005317 00000 n 
+0000006481 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+6609
+%%EOF

@@ -157,3 +157,6 @@ Testing to test numpy:
 NumPy requires pytest and hypothesis. Tests can then be run after installation with:
 
 python -c "import numpy, sys; sys.exit(numpy.test() is False)"
+
+## Revision Cheatsheet PDF
+- Printable version: `NUMPY_CHEATSHEET.pdf`
